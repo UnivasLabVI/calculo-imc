@@ -4,7 +4,7 @@ $weight = $_POST ['weight'];
 $height = $_POST ['height'];$_POST
 $bmiIndex = 0.0;
 
-if (is_double($weight) && is_double($height)){
+if (is_numeric($weight) && is_numeric($height)){
     $bmiIndex = BMIService::getIndex($weight, $height);
 }
 
